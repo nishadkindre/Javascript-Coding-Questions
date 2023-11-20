@@ -31,4 +31,4 @@ while (rounds<=5){
     rounds++
 }
 alert("Score: Player-"+ myscore +" | Computer-"+ pcscore)
-// playAgain = confirm("D0 you want to play again?") --optional
+// playAgain = confirm("D0 you want to play again?") --optional change
