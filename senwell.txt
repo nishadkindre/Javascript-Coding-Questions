@@ -1,0 +1,9 @@
+js: Create a pyramid structure using star  * ** *** **** *****
+
+input = "SE@NW+E(L=L)"
+
+
+React: Crearte a counter with 2 button and 1 display
+
+
+Node: Create an example of IO Operation
