@@ -29,7 +29,12 @@ function countVowels_(data) {
   return count;
 }
 
-const numOfVowels = countVowels_(str);
+function countVowels2(str) {
+  let count = str.match(/[aeiou]/gi).length; // for global case & insensitive matching
+  return count;
+}
+
+const numOfVowels = countVowels2(str);
 console.log(numOfVowels);
-console.log(typeof countVowels.prototype);
+// console.log(typeof countVowels.prototype);
 // console.log(countVowels.name);

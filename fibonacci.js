@@ -8,6 +8,7 @@ function fibonacci(n) {
   return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
+// regular
 function fibSequence(n) {
   fib = [0, 1];
   for (let i = 2; i < n; i++) {

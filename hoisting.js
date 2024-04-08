@@ -1,10 +1,13 @@
-console.log(a);
+console.log(a); // undefined
 var a = 4;
-console.log(a);
+console.log(a); // 4
 
 greet();
 function greet() {
-  console.log("greet");
+  console.log(a); // undefined
+  var a = 99;
+  console.log(a); // 99
+  console.log("greet"); // greet
 }
 
 /*

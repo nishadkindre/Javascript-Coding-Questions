@@ -1,14 +1,16 @@
 var name = "nishda";
 
+var globalObj = { name: "ravan" };
+
 const obj = {
-  name: "Alice",
+  name: "ram",
   sayHello: function () {
     // Regular function expression
-    console.log("Hello, " + this.name + "!");
+    console.log("Hello, " + this.name + ", regular function!");
   },
   sayHelloArrow: () => {
     // Arrow function
-    console.log("Hello, " + this.name + "!");
+    console.log("Hello, " + this.name + ", arrow function!");
   },
 };
 
