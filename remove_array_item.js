@@ -14,8 +14,16 @@ function removeItemFromArray2(arr, item) {
   return arr;
 }
 
-let arr = [1, 2, 3, 4, 5, 6, 7];
-let item = 5;
+function removeItemFromArray3(arr, item) {
+  const index = arr.indexOf(item);
+  if (index > -1) {
+    delete arr[index];
+  }
+  return arr;
+}
 
-console.log(removeItemFromArray2(arr, item));
+let arr = [1, 2, 3, 4, 5, 6, 7];
+let item = 3;
+
+console.log(removeItemFromArray3(arr, item));
 console.log(arr);

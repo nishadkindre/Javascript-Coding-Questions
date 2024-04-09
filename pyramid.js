@@ -6,7 +6,7 @@ function createPyramid(height) {
       row += "  "; // Add spaces before the first asterisk
     }
     for (let k = 1; k <= 2 * i - 1; k++) {
-      // since ther should be odd number of stars
+      // since there should be odd number of stars
       row += "* "; // Add asterisks
     }
     console.log(row);

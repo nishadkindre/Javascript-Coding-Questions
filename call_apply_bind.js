@@ -27,3 +27,11 @@ const greetPerson2 = greet.bind(person2);
 
 greetPerson1("Hola"); // Output: Hola, John Doe!
 greetPerson2("Bonjour"); // Output: Bonjour, Jane Smith!
+
+greet.bind(
+  {
+    firstName: "Nishad",
+    lastName: "Kindre",
+  },
+  "Sup!"
+)();
