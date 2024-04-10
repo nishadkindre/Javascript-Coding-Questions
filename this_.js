@@ -27,4 +27,20 @@ function makeUser() {
   console.log(user1);
 }
 
-//
+{
+  // run this in browser
+  window.globalVariable = "Can acces this with arrow function";
+  (() => console.log(this.globalVariable))();
+}
+
+{
+  let x = 5;
+  let obj = {
+    x: 2,
+    getX: () => {
+      console.log(this.x);
+    },
+  };
+
+  obj.getX();
+}

@@ -32,3 +32,27 @@ console.log(
   set.has("1"),
   set.has(1)
 );
+
+// any object given as key is turned into "[object Object]" as objects only accept strings as keys
+{
+  const a = {};
+  const b = { key: "b" };
+  const c = { key: "c" };
+
+  a[b] = 123; // "[object Object]": 123
+  a[c] = 456; // "[object Object]": 456 , shadows the key
+
+  console.log(a[b]);
+}
+
+//
+{
+  let a = 3;
+  ++a;
+  console.log(a);
+  let b = {
+    a: 9,
+    b: ++a, // will reference a in
+  };
+  console.log(a + b.a + ++b.b);
+}
