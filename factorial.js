@@ -6,5 +6,13 @@ function factorial(num) {
   return result;
 }
 
+function factorialRecursive(num) {
+  if (num === 0) {
+    return 1;
+  } else {
+    return num * factorialRecursive(num - 1);
+  }
+}
+
 console.log(factorial(4));
-console.log(factorial(5));
+console.log(factorialRecursive(4));

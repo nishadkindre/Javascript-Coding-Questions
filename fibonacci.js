@@ -1,11 +1,12 @@
 // Fibonacci Sequence is the sequence in which a number is the sum of its preceeding two numbers
 
 // recursion
-function fibonacci(n) {
-  if (n <= 1) {
-    return n;
+function fibonacci(num) {
+  if (num < 2) {
+    return num;
+  } else {
+    return fibonacci(num - 1) + fibonacci(num - 2);
   }
-  return fibonacci(n - 1) + fibonacci(n - 2);
 }
 
 // regular
@@ -19,3 +20,12 @@ function fibSequence(n) {
 }
 
 console.log(fibSequence(5));
+const nTerms = 5;
+
+if (nTerms <= 0) {
+  console.log("Enter a positive integer.");
+} else {
+  for (let i = 0; i < nTerms; i++) {
+    console.log(fibonacci(i));
+  }
+}
