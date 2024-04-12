@@ -54,5 +54,5 @@ console.log(
     a: 9,
     b: ++a, // will reference a in
   };
-  console.log(a + b.a + ++b.b);
+  console.log(a + b.a + ++b.b); // 5 + 9 + 6
 }

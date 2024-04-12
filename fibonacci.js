@@ -1,4 +1,5 @@
 // Fibonacci Sequence is the sequence in which a number is the sum of its preceeding two numbers
+// Fibonacci number are used to describe number of petals on flower, shape of spiral
 
 // recursion
 function fibonacci(num) {

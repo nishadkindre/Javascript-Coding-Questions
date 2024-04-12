@@ -3,7 +3,7 @@ let obj = {
   lastName: "Kindre",
 };
 
-let copy1 = obj;
+let copy1 = obj; // shallow copy
 let copy2 = Object.assign({}, obj);
 let copy3 = { ...obj };
 let copy4 = JSON.parse(JSON.stringify(obj));

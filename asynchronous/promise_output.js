@@ -1,10 +1,10 @@
 console.log("Start");
 
-// const promise1 = new Promise((resolve, reject) => {
-//   console.log("1"); // will log even without consuming the promise, it is synchronous operation
-//   resolve("2");
-//   console.log("3");
-// });
+const promise1 = new Promise((resolve, reject) => {
+  console.log("4"); // will log even without consuming the promise, it is synchronous operation
+  resolve("5");
+  console.log("6");
+});
 
 const fn = () =>
   new Promise((resolve, reject) => {

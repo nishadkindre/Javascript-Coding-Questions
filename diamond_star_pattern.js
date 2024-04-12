@@ -10,4 +10,4 @@ function diamondPattern(num) {
   }
 }
 
-diamondPattern(5);
+diamondPattern(15);

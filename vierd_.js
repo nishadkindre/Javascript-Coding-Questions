@@ -6,4 +6,4 @@ function sayHi() {
 }
 console.log(typeof sayHi()); // number
 
-console.log(typeof typeof 1); // string since typeof 1 returns type in string: "number"
+console.log(typeof typeof 1); // string,  since typeof 1 returns type in string: "number"

@@ -3,4 +3,5 @@ function sum(num) {
   return num;
 }
 
-console.log(sum(4));
+console.log(sum(5));
+// 5 + 4 + 3 + 2 + 1  = 15

@@ -17,7 +17,7 @@ callbackFunction("Nishad", function (msg) {
   callbackFunction2("Kindre", function (msg) {
     console.log(msg);
     callbackFunction3("Pune", function (msg) {
-      // event hough this callback takes least time it is executed only after it s parent functions
+      // even though this callback takes least time it is executed only after it s parent functions
       console.log(msg);
     });
   });

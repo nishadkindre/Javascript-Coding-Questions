@@ -29,7 +29,7 @@ function makeUser() {
 
 {
   // run this in browser
-  window.globalVariable = "Can acces this with arrow function";
+  window.globalVariable = "Can access this with arrow function";
   (() => console.log(this.globalVariable))();
 }
 

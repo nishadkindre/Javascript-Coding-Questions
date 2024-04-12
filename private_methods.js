@@ -10,4 +10,4 @@ var Module = (function () {
 })();
 
 Module.publicMethod();
-Module.privateMethod();
+Module.privateMethod(); // cannot be accessed

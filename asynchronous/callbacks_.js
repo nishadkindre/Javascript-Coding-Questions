@@ -7,7 +7,7 @@ function importantFunction(username) {
   }, 1000);
 }
 const message = importantFunction("Nishad"); // doesnt return instantly
-// console.log(message); // undefined
+console.log(message); // undefined
 
 // With callback
 function callbackFunction(username, cb) {
@@ -17,6 +17,6 @@ function callbackFunction(username, cb) {
 const message1 = callbackFunction("Nishad", function (msg) {
   console.log(msg);
 });
-// console.log(message1);
+console.log(message1);
 
 console.log("End");

@@ -1,5 +1,5 @@
 /*
-Slice method: returns a portion of an array
+Slice method: returns a portion of an array/ string
               doesnt mutate the array
               creates a ashallow copy of the array
               syntax: array.slice(optional first parameter, optional second parameter)
