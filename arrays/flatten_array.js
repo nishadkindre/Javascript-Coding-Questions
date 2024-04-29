@@ -60,4 +60,4 @@ function customFlat2(arr, depth = 1) {
   return flat;
 }
 
-console.log("Custom Array flat with depth: ", customFlat2(arr, -2));
+console.log("Custom Array flat with depth: ", customFlat2(arr, Infinity));

@@ -3,7 +3,7 @@ function removeDuplicate(arr) {
 }
 
 function removeDuplicate2(arr) {
-  return arr.filter((item, val) => arr.indexOf(item) === val); // indexOf returns the first occurence
+  return arr.filter((item, index) => arr.indexOf(item) === index); // indexOf returns the first occurence
 }
 
 function removeDuplicate3(arr) {

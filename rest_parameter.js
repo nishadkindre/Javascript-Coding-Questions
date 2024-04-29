@@ -1,6 +1,7 @@
 function add(b, c, ...args) {
   console.log(typeof args); // object
   let a = 1;
+  console.log(args[1]);
   for (let i of args) {
     a += i;
   }

@@ -44,3 +44,9 @@ function makeUser() {
 
   obj.getX();
 }
+
+function squareOff() {
+  return this.map((i) => i ** 2);
+}
+let ar = [1, 2, 3, 4, 5];
+console.log(squareOff.call(ar));

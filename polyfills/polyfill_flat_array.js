@@ -1,9 +1,10 @@
-function flatten() {
+// Dont use arrow function as it cannot bind "this" value inside function
+function flatten(depth = 1) {
   let newArr = [];
 
   this.forEach((item) => {
-    if (Array.isArray(item)) {
-      newArr.push(...item.flatten());
+    if (Array.isArray(item) && depth > 0) {
+      newArr.push(...item.flatten(depth - 1));
     } else newArr.push(item);
   });
 
@@ -14,8 +15,8 @@ Array.prototype.flatten = flatten;
 
 let input = [
   1,
-  2,
-  3,
+  [2],
+  [3],
   [4],
   [5, 6, [7], [8, [9, [10]]]],
   11,
@@ -27,4 +28,4 @@ let input = [
   [19, [20, [21, [22, [23, [24, [[[[[25]]]]]]]]]]],
 ];
 
-console.log(input.flatten());
+console.log(input.flatten(Infinity));

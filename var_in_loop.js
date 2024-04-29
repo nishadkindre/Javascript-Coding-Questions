@@ -6,14 +6,16 @@
 
 function a() {
   for (var i = 0; i < 3; i++) {
-    setTimeout(() => console.log(i), i * 1000);
+    console.log(i);
+    setTimeout(() => console.log(i), 1000);
+    // no delay between each 3, but 1 second delay at beginning
   }
 }
-// a(); // returns 10
+a(); // returns 333 right away
 
 // solution with var and closure
 function b() {
-  for (var i = 0; i < 3; i++) {
+  for (var i = 1; i <= 3; i++) {
     function inner(i) {
       setTimeout(() => console.log(i), i * 1000);
     }
@@ -31,4 +33,12 @@ This is due to:
   since for each iteration a new block is created with let
 
   or can use closure
+*/
+
+/*
+  Since setTimeout is asynchronouns operation, it gets executed after loop completes 
+  as loop gets executed in microseconds
+  loop takes minimal microseconds to created these setTimeouts
+  5 setTimeouts are created, each with 1 second delay
+  All are executed right away
 */

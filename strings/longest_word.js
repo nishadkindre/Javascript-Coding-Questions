@@ -7,4 +7,15 @@ function longestWord(str) {
     );
 }
 
-console.log(longestWord("My Name is Nishad Gajanan Kindre."));
+function longestWord2(str) {
+  let longest = "";
+  for (const word of str.split(" ")) {
+    if (word.length > longest.length) {
+      longest = word;
+    }
+  }
+  return longest;
+}
+
+let str = "My Name is Nishad Gajanan Kindre.";
+console.log(longestWord2(str));

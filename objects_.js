@@ -56,3 +56,31 @@ console.log(
   };
   console.log(a + b.a + ++b.b); // 5 + 9 + 6
 }
+
+{
+  // Object destructuring
+  const obj = {
+    "my-name": "Nishad",
+    age: 22,
+  };
+  console.log(obj["my-name"]);
+  let { "my-name": myName, age } = obj;
+  console.log(myName);
+}
+
+{
+  // run in browser
+  var length = 10;
+  function fn() {
+    console.log(this.length);
+  }
+  var obj3 = {
+    length: 5,
+    method: function (fn) {
+      fn(); // 10 --> points to window object
+      arguments[0]();
+    },
+  };
+  obj3.method(fn, 1); // 10, 2
+  obj3.method(fn, 1, 2); // 10, 3
+}
