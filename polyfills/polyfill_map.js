@@ -2,7 +2,7 @@
 Array.map((num, i, array) => {})
 */
 // Map returns each value and modifies it according to the callback
-export default Array.prototype.myMap = function (cb) {
+Array.prototype.myMap = function (cb) {
   // dont use arrow function
   let temp = [];
   for (let i = 0; i < this.length; i++) {
