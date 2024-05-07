@@ -1,4 +1,6 @@
 // An Armstrong Number is an n-digit number that is the sum of the nth power of its all digits.
+// Eg: 153, 370, 371, 407
+// such that 153 = 1**3 + 5**3 + 3**3
 
 function isArmstrongNumber(num) {
   if (num <= 9) return true;
@@ -9,6 +11,16 @@ function isArmstrongNumber(num) {
   );
 
   return sum === num;
+}
+
+function isArmstrongNumber2(num){
+    if (num <= 9) return true;
+    let str = num.toString().split("");
+    let result = 0;
+    str.forEach((num) => {
+        result += parseInt(num)**(str.length);
+    })
+    return result === num;
 }
 
 function findArmstrongNumbersTill(num) {
