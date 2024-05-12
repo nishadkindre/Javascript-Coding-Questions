@@ -11,6 +11,16 @@ Array.prototype.myFilter = function (cb) {
   return temp;
 };
 
+Array.prototype.myFilter2 = function (cb) {
+  let newArr = [];
+  this.forEach((value, index, array) => {
+    if (cb(value, index, array)) {
+      newArr.push(value);
+    }
+  });
+  return newArr;
+};
+
 let arr = [1, 2, 3, 4, 5, 6];
-let newArr = arr.myFilter((num) => num % 2 === 0);
+let newArr = arr.myFilter2((num) => num % 2 === 0);
 console.log(newArr);
